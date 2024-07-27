@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio page. include hover-float div-nav menu</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 0px;
+            background-color: rgb(36, 35, 35);
+        }
+
+        /* this is nav section */
+        /* flex box stylesheet */
+
+        .flex-box {
+            display: flex;
+            align-items: center;
+            background-color: rgb(60, 61, 61);
+            height: 50px;
+            margin-left: 5%;
+            margin-right: 5%;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        /* this is child fb1 sylesheet */
+
+        .child-fb1 {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            height: 100%;
+        }
+
+        body>nav>section a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .child-fb1-div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body>nav>section .child-fb1-div:hover {
+            background-color: rgb(89, 177, 2);
+        }
+
+
+
+        /* this is child fb2 stylesheet */
+
+        .child-fb2 {
+            display: flex;
+            justify-content: space-around;
+            width: 20%;
+            height: 100%;
+        }
+
+        .child-fb2-div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body>nav>section .child-fb2-div:hover {
+            background-color: rgb(89, 177, 2);
+        }
+
+
+        /* this is main section stylesheet */
+        /* ////////////////////////////////////////// */
+
+
+        .full-sec {
+            margin: 50px;
+            height: auto;
+
+        }
+
+        /* parent bio stylesheet */
+        .parent-bio {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 400px;
+            margin-left: 5%;
+        }
+
+        .bio-heading>h1 {
+            font-weight: 500;
+        }
+
+
+
+        /* child bio stylesheet */
+        .child-bio {
+            color: aliceblue;
+            height: 100%;
+            width: 100%;
+        }
+
+        .intro {
+            font-family: Courier, monospace;
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        .child-bio>button {
+            border-radius: 3px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 1% 5% 1% 5%;
+            font-size: 14px;
+            color: aliceblue;
+            transition: 0.3s;
+            background-color: rgb(89, 177, 2);
+            border: 0px;
+            box-shadow: 2px 2px 10px rgba(109, 241, 92, 0.5);
+        }
+
+        .child-bio>button:hover {
+            transform: scale(1.1);
+        }
+
+
+        /* child pic stylsheet */
+        .child-pic {
+            width: 40%;
+            height: 100%;
+            background-color: rgb(36, 35, 35);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-img {
+            height: 70%;
+            width: 300px;
+            background-color: rgb(36, 35, 35);
+        }
+
+        .circle {
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+            background-image: url(fuad-img.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        /* This is Footer section */
+        /* //////////////////////////////////// */
+
+        footer {
+            margin: 0% 10% 10% 10%;
+            color: aliceblue;
+        }
+
+
+        .ft-heading {
+            color: aliceblue;
+            font-size: 14px;
+            font-weight: 100;
+        }
+
+        /* ft link stylesheet */
+
+        .ft-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+
+
+        }
+
+        .link-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            height: 100%;
+            width: 9%;
+            border: 1px solid rgb(80, 80, 80);
+            border-radius: 5px;
+            transition: 0.5s ease-in-out;
+
+        }
+
+        .link-box:hover {
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <section class="flex-box">
+            <div class="child-fb1">
+                <div class="child-fb1-div">
+                    <a href="" class="cfb1">Home</a>
+                </div>
+                <div class="child-fb1-div">
+                    <a href="" class="cfb1">Case studio</a>
+                </div>
+                <div class="child-fb1-div">
+                    <a href="" class="cfb1">Testimonials</a>
+                </div>
+                <div class="child-fb1-div">
+                    <a href="" class="cfb1">Resent work</a>
+                </div>
+                <div class="child-fb1-div">
+                    <a href="" class="cfb1">Get in touch</a>
+                </div>
+            </div>
+            <div class="child-fb2">
+                <div class="child-fb2-div">
+                    <a href="https://www.facebook.com/profile.php?id=100024249646264&mibextid=ZbWKwL" target="_blank"
+                        class="cfb2">
+                        <img src="facebook.png" alt="" width="20px">
+                    </a>
+                </div>
+                <div class="child-fb2-div">
+                    <a href="www.linkedin.com/in/md-fuad-mia-b22923268" target="_blank" class="cfb2">
+                        <img src="linkedin-big-logo.png" alt="" width="20px">
+                    </a>
+                </div>
+                <div class="child-fb2-div">
+                    <a href="https://x.com/BARKATISLAMFUAD?s=08" target="_blank" class="cfb2">
+                        <img src="twitter.png" alt="" width="20px">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <main>
+        <section class="full-sec">
+            <section class="parent-bio">
+
+
+                <div class="child-bio">
+                    <div class="bio-heading">
+                        <h1 style="font-size: 25px;">Hey,</h1>
+                        <h1> <span style="color: darkorange;">I</span> am FUAD</h1>
+                    </div>
+                    <div class="intro">
+                        <p>
+                            I'm a web developer passionate about creating dynamic, responsive, and user-friendly
+                            websites. I specialize in both front-end and back-end development, utilizing technologies
+                            like HTML, CSS, JavaScript, and various frameworks such as React and Node.js. With a strong
+                            foundation in coding and a keen eye for design, I aim to deliver seamless digital
+                            experiences. I enjoy solving complex problems and continually learning new skills to stay
+                            updated with industry trends.
+                        </p>
+                    </div>
+                    <button>
+                        Let's Get Started >
+                    </button>
+                </div>
+
+
+                <div class="child-pic">
+                    <div class="center-img">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+        </section>
+    </main>
+    <footer>
+        <section class="footer-main">
+            <section class="ft-heading">
+                <p>Experiences With </p>
+            </section>
+
+            <section class="ft-link">
+                <div class="link-box">
+                    <a href="https://www.paypal.com/bd/home" target="_blank">
+                        <img src="paypal.png">
+                    </a>
+                </div>
+                <div class="link-box">
+                    <a href="https://www.dropbox.com/official-teams-page?_tk=paid_sem_goog_biz_b&_camp=20551930309&_kw=dropbox|e&_ad=676181163252||c&gad_source=1&gclid=CjwKCAjwko21BhAPEiwAwfaQCMs_OB_myEcfx3haJ4A6mIcOkG6bn14CRu3BndXzfDnISxvlIiyvABoCYlgQAvD_BwE"
+                        target="_blank">
+                        <img src="dropbox.png" alt="">
+                    </a>
+                </div>
+                <div class="link-box">
+                    <a href="https://www.binance.com/en" target="_blank">
+                        <img src="binance.png" alt="">
+                    </a>
+                </div>
+                <div class="link-box">
+                    <a href="https://aws.amazon.com/" target="_blank">
+                        <img src="aws.png" alt="">
+                    </a>
+                </div>
+                <div class="link-box">
+                    <a href="https://wordpress.com/" target="_blank">
+                        <img src="wordpress-logo.png" alt="">
+                    </a>
+                </div>
+            </section>
+
+        </section>
+    </footer>
+</body>
+
+</html>
